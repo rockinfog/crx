@@ -1,8 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "Getting started example",
-  "description": "This extension allows the user to change the background color of the current page.",
+  "name": "okexwatcher",
+  "description": "Watch changes",
   "version": "1.0",
+  "icons": { 
+    "16": "icon.png",             
+    "48": "icon.png",            
+    "128": "icon.png" 
+   },
   "content_scripts": [
     {
       "matches": [
