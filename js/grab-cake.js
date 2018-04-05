@@ -96,10 +96,12 @@ function grabCake() {
                 fireEvent($btn, 'click');
              
                 //console.log();
-                alert('已自动下单，请尽快操作！');
-
-                var $sureBtn = document.querySelectorAll('.sure-order>div.btn-group>button')[1];
-                fireEvent($sureBtn,'click');
+                //alert('已自动下单，请尽快操作！');
+                setTimeout(() => {
+                    var $sureBtn = document.querySelectorAll('.sure-order>div.btn-group>button')[1];
+                    fireEvent($sureBtn,'click');
+                }, 500);
+              
                 clearInterval(timer);
                 return;
             }
