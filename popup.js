@@ -20,5 +20,7 @@ document.getElementById("btnSubmit").onclick = function () {
     chrome.storage.local.set({ 'cnt': 0 }, function () {
         console.log('存储成功');
     });
+
+    
 }
 
